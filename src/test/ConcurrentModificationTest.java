@@ -8,11 +8,11 @@ import java.util.List;
  * 集合并发操作问题模拟
  *
  */
-public class Test {
+public class ConcurrentModificationTest {
 
 //	public static List<String> testList = Collections.emptyList();//java.lang.UnsupportedOperationException
 	public static List<String> testList = new ArrayList<>();//java.util.ConcurrentModificationException
-	public Test() {}
+	public ConcurrentModificationTest() {}
 
 	public void testList(){
 		System.out.println("执行test运行方法。");
@@ -32,7 +32,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 
-		Test test = new Test();
+		ConcurrentModificationTest test = new ConcurrentModificationTest();
 		TestThread testThread = new TestThread(test);
 		new Thread(testThread).start();
 		new Thread(testThread).start();
@@ -99,9 +99,9 @@ public class Test {
 
 class TestThread implements Runnable{
 	
-	private static Test test;
+	private static ConcurrentModificationTest test;
 	
-	public TestThread(Test test){
+	public TestThread(ConcurrentModificationTest test){
 		TestThread.test = test;
 	}
 	
