@@ -47,5 +47,6 @@ public class ListTest {
 			}
 		}
 		System.out.println(a.toString());
+	
 	}
 }
