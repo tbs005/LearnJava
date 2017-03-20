@@ -8,7 +8,7 @@ import com.google.common.collect.Maps;
 
 /**
  * Google Guava 工具类测试
- *
+ * guava-18.0.1.jar
  */
 public class GuavaMapsTest {
 
