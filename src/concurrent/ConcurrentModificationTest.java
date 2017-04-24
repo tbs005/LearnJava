@@ -6,7 +6,8 @@ import java.util.List;
 
 /**
  * 集合并发操作问题模拟
- *
+ * 代码将抛出 ConcurrentModification 异常
+ * 
  */
 public class ConcurrentModificationTest {
 
