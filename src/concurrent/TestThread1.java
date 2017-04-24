@@ -1,4 +1,4 @@
-package test;
+package concurrent;
 
 /**
  * Java 多线程内存可见性测试
