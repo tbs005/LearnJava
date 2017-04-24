@@ -1,4 +1,4 @@
-package guavatest;
+package guava;
 
 import java.util.Map;
 
