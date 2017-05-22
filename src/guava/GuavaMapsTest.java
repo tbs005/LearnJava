@@ -18,9 +18,9 @@ public class GuavaMapsTest {
 		Map<String, Integer> right = ImmutableMap.of("a", 1, "b", 2, "c", 2,"d",5);
 		MapDifference<String, Integer> diff = Maps.difference(left, right);
 
-		System.out.println(diff.entriesInCommon()); // {a=1}
-		System.out.println(diff.entriesOnlyOnLeft()); // {cc=1}
-		System.out.println(diff.entriesOnlyOnRight()); // {d=5}
+		System.out.println(diff.entriesInCommon()); //结果  {a=1}
+		System.out.println(diff.entriesOnlyOnLeft()); //结果  {cc=1}
+		System.out.println(diff.entriesOnlyOnRight()); //结果  {d=5}
 		System.out.println(diff.entriesDiffering()); 
 	}
 
