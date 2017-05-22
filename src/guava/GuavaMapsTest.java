@@ -21,7 +21,7 @@ public class GuavaMapsTest {
 		System.out.println(diff.entriesInCommon()); //结果  {a=1}
 		System.out.println(diff.entriesOnlyOnLeft()); //结果  {cc=1}
 		System.out.println(diff.entriesOnlyOnRight()); //结果  {d=5}
-		System.out.println(diff.entriesDiffering()); 
+		System.out.println(diff.entriesDiffering()); //结果 {b=(1, 2), c=(1, 2)}
 	}
 
 }
