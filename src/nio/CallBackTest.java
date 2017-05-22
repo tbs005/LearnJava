@@ -30,7 +30,7 @@ public class CallBackTest {
 				}
 
 			});
-			Thread.sleep(2000L);//主线程不加sleep将立即终止，导致异步文件读写结果无法接收并处理
+			Thread.sleep(2000L);//主线程不加sleep将立即终止，这将导致异步文件读写结果无法接收并处理
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
