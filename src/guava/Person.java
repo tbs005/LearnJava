@@ -3,7 +3,7 @@ package guava;
 /**
  * Guava集合测试用户
  */
-public class Person {;
+public class Person {
 	
 	/**
 	 * 用户ID
